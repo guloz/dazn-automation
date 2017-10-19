@@ -17,20 +17,22 @@ import java.util.concurrent.TimeUnit;
 public class PageObject {
 
 
-    public static final int TIMEOUT_TEN_SECONDS = 10;
-    public static final int POLLING_TIME_IN_MILLISECONDS = 500;
+    private static final int TIMEOUT_TEN_SECONDS = 10;
+    private static final int POLLING_TIME_IN_MILLISECONDS = 500;
 
-    static WebDriver driver;
+    public WebDriver driver;
 
     public static final java.lang.String BASE_URL = "https://stag.dazn.com/en-DE";
-    public static final java.lang.String DAZN_LOGO = "Logo";
-    public static final java.lang.String FAQ = "https://preprod-dazn.cs86.force.com/help/DE-en/FAQ";
-    public static final java.lang.String TERMS_OF_USE = "a[href='https://preprod-dazn.cs86.force.com/help/DE-en/terms']";
-    public static final java.lang.String PRIVACY = "a[href='https://preprod-dazn.cs86.force.com/help/DE-en/privacy']";
-    public static final java.lang.String HELP = "a[href='https://preprod-dazn.cs86.force.com/help/DE-en']";
-    public static final java.lang.String IMPRINT = "a[href='https://preprod-dazn.cs86.force.com/help/DE-en/impressum']";
-    public static final java.lang.String LANDING_PAGE_TITLE = "DAZN-Staging";
-    public static final java.lang.String LANDING_URL = BASE_URL+"en-DE";
+    public static final java.lang.String SIGN_IN_URL = "https://stag.dazn.com/en-DE/account/signin";
+    public static final java.lang.String SIGN_UP_URL = "https://stag.dazn.com/en-DE/account/signup";
+
+    private static final java.lang.String DAZN_LOGO = "Logo";
+    private static final java.lang.String FAQ = "https://preprod-dazn.cs86.force.com/help/DE-en/FAQ";
+    private static final java.lang.String TERMS_OF_USE = "a[href='https://preprod-dazn.cs86.force.com/help/DE-en/terms']";
+    private static final java.lang.String PRIVACY = "a[href='https://preprod-dazn.cs86.force.com/help/DE-en/privacy']";
+    private static final java.lang.String HELP = "a[href='https://preprod-dazn.cs86.force.com/help/DE-en']";
+    private static final java.lang.String IMPRINT = "a[href='https://preprod-dazn.cs86.force.com/help/DE-en/impressum']";
+    private static final java.lang.String LANDING_PAGE_TITLE = "DAZN-Staging";
 
 
     @FindBy(className = DAZN_LOGO)
