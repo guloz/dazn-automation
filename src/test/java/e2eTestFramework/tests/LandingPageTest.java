@@ -31,9 +31,10 @@ public class LandingPageTest extends BaseTest {
         landingPage.checkLinkTextExist(SIGNIN_LINK_TEXT);
         Assert.assertTrue(landingPage.verifyAllLinkText());
         landingPage.isElementPresent(landingPage.signupbutton);
-    }
-
+        landingPage.checkLandingPageFooterUrlValues();
         //        driver.quit();
+
     }
+}
 
 

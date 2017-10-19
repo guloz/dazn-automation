@@ -103,9 +103,22 @@ public class LandingPage extends PageObject {
         }
     }
 
-//        Assert.assertEquals(true, rxBtn.isDisplayed());
-//
-    // check help, faq, terms, privacy links exist
+
     // follow the links of buttons and linktext to see they work ok
+
+
+    public void checkLandingPageFooterUrlValues(){
+        Assert.assertEquals(helpElement.getAttribute("href"), HELP_URL);
+        Assert.assertEquals(faqElement.getAttribute("href"), FAQ_URL);
+        Assert.assertEquals(privacyElement.getAttribute("href"), PRIVACY_URL);
+        Assert.assertEquals(termsOfUseElement.getAttribute("href"), TERMS_OF_USE_URL);
+        Assert.assertEquals(imprintElement.getAttribute("href"), IMPRINT_URL);
+
+
+
+    }
+
+
+
 
 }

@@ -2,13 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b95767af-9a8e-41f4-8a2c-e4420d71dfa3" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/e2eTestFramework/common/PageObject.class" afterPath="$PROJECT_DIR$/target/test-classes/e2eTestFramework/common/PageObject.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/e2eTestFramework/pages/LandingPage.class" afterPath="$PROJECT_DIR$/target/test-classes/e2eTestFramework/pages/LandingPage.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/e2eTestFramework/pages/SignInPage$1.class" afterPath="$PROJECT_DIR$/target/test-classes/e2eTestFramework/pages/SignInPage$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/e2eTestFramework/pages/SignInPage$2.class" afterPath="$PROJECT_DIR$/target/test-classes/e2eTestFramework/pages/SignInPage$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/e2eTestFramework/pages/SignInPage.class" afterPath="$PROJECT_DIR$/target/test-classes/e2eTestFramework/pages/SignInPage.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/e2eTestFramework/common/PageObject.java" afterPath="$PROJECT_DIR$/src/test/java/e2eTestFramework/common/PageObject.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/e2eTestFramework/pages/LandingPage.java" afterPath="$PROJECT_DIR$/src/test/java/e2eTestFramework/pages/LandingPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/e2eTestFramework/pages/SignInPage.java" afterPath="$PROJECT_DIR$/src/test/java/e2eTestFramework/pages/SignInPage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/e2eTestFramework/tests/LandingPageTest.java" afterPath="$PROJECT_DIR$/src/test/java/e2eTestFramework/tests/LandingPageTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/e2eTestFramework/tests/SignInTest.java" afterPath="$PROJECT_DIR$/src/test/java/e2eTestFramework/tests/SignInTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/e2eTestFramework/tests/SignUpTest.java" afterPath="$PROJECT_DIR$/src/test/java/e2eTestFramework/tests/SignUpTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,14 +22,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LandingPageTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LandingPageTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/e2eTestFramework/tests/LandingPageTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" column="30" lean-forward="true" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
+            <state relative-caret-position="420">
+              <caret line="33" column="43" lean-forward="false" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LandingPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/e2eTestFramework/pages/LandingPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="239">
+              <caret line="112" column="69" lean-forward="false" selection-start-line="112" selection-start-column="69" selection-end-line="112" selection-end-column="69" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PageObject.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/e2eTestFramework/common/PageObject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="148">
+              <caret line="31" column="56" lean-forward="false" selection-start-line="31" selection-start-column="56" selection-end-line="31" selection-end-column="56" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -474,28 +496,17 @@
       <option name="project" value="LOCAL" />
       <updated>1508425329783</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="LandingPage Sanity Check Test Added - Reviewed By Joe">
+      <created>1508432541492</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1508432541492</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LandingPageTest_landingPage_checkElementsExist - 2017.10.19 at 17h 58m 09s.xml">
-      <configuration name="LandingPageTest.landingPage_checkElementsExist" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LandingPageTest_landingPage_checkElementsExist - 2017.10.19 at 17h 58m 16s.xml">
-      <configuration name="LandingPageTest.landingPage_checkElementsExist" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LandingPageTest_landingPage_checkElementsExist - 2017.10.19 at 17h 58m 47s.xml">
-      <configuration name="LandingPageTest.landingPage_checkElementsExist" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LandingPageTest_landingPage_checkElementsExist - 2017.10.19 at 17h 58m 59s.xml">
-      <configuration name="LandingPageTest.landingPage_checkElementsExist" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LandingPageTest_landingPage_checkElementsExist - 2017.10.19 at 18h 00m 00s.xml">
-      <configuration name="LandingPageTest.landingPage_checkElementsExist" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LandingPageTest_landingPage_checkElementsExist - 2017.10.19 at 18h 00m 21s.xml">
-      <configuration name="LandingPageTest.landingPage_checkElementsExist" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="LandingPageTest_landingPage_checkElementsExist - 2017.10.19 at 18h 00m 31s.xml">
       <configuration name="LandingPageTest.landingPage_checkElementsExist" configurationId="JUnit" />
     </history-entry>
@@ -506,6 +517,24 @@
       <configuration name="LandingPageTest.landingPage_checkElementsExist" configurationId="JUnit" />
     </history-entry>
     <history-entry file="LandingPageTest_landingPage_checkElementsExist - 2017.10.19 at 18h 01m 53s.xml">
+      <configuration name="LandingPageTest.landingPage_checkElementsExist" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LandingPageTest_landingPage_checkElementsExist - 2017.10.19 at 18h 13m 03s.xml">
+      <configuration name="LandingPageTest.landingPage_checkElementsExist" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LandingPageTest_landingPage_checkElementsExist - 2017.10.19 at 18h 24m 49s.xml">
+      <configuration name="LandingPageTest.landingPage_checkElementsExist" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LandingPageTest_landingPage_checkElementsExist - 2017.10.19 at 18h 26m 32s.xml">
+      <configuration name="LandingPageTest.landingPage_checkElementsExist" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LandingPageTest_landingPage_checkElementsExist - 2017.10.19 at 18h 28m 04s.xml">
+      <configuration name="LandingPageTest.landingPage_checkElementsExist" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LandingPageTest_landingPage_checkElementsExist - 2017.10.19 at 18h 29m 28s.xml">
+      <configuration name="LandingPageTest.landingPage_checkElementsExist" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LandingPageTest_landingPage_checkElementsExist - 2017.10.19 at 18h 29m 59s.xml">
       <configuration name="LandingPageTest.landingPage_checkElementsExist" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -574,7 +603,8 @@
     <MESSAGE value="updated element locators" />
     <MESSAGE value="Optimised Imports" />
     <MESSAGE value="Webdriver and Page Objects Refactored" />
-    <option name="LAST_COMMIT_MESSAGE" value="Webdriver and Page Objects Refactored" />
+    <MESSAGE value="LandingPage Sanity Check Test Added - Reviewed By Joe" />
+    <option name="LAST_COMMIT_MESSAGE" value="LandingPage Sanity Check Test Added - Reviewed By Joe" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -807,14 +837,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/e2eTestFramework/common/PageObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="48" column="76" lean-forward="false" selection-start-line="48" selection-start-column="76" selection-end-line="48" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/e2eTestFramework/pages/SignInPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
@@ -823,24 +845,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/e2eTestFramework/pages/LandingPage.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.8.1/junit-4.8.1-sources.jar!/org/junit/Assert.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="59" column="30" lean-forward="false" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="30" />
+        <state relative-caret-position="159">
+          <caret line="52" column="23" lean-forward="false" selection-start-line="52" selection-start-column="23" selection-end-line="52" selection-end-column="23" />
           <folding>
-            <element signature="e#2502#2503#0" expanded="true" />
-            <element signature="e#2562#2563#0" expanded="true" />
+            <element signature="e#1434#1435#0" expanded="false" />
+            <element signature="e#1468#1469#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/e2eTestFramework/tests/LandingPageTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="30" lean-forward="true" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
+        <state relative-caret-position="420">
+          <caret line="33" column="43" lean-forward="false" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/e2eTestFramework/pages/LandingPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="112" column="69" lean-forward="false" selection-start-line="112" selection-start-column="69" selection-end-line="112" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/e2eTestFramework/common/PageObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="31" column="56" lean-forward="false" selection-start-line="31" selection-start-column="56" selection-end-line="31" selection-end-column="56" />
+          <folding />
         </state>
       </provider>
     </entry>

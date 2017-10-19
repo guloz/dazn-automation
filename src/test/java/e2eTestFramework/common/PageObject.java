@@ -26,13 +26,13 @@ public class PageObject {
     public static final java.lang.String SIGN_IN_URL = "https://stag.dazn.com/en-DE/account/signin";
     public static final java.lang.String SIGN_UP_URL = "https://stag.dazn.com/en-DE/account/signup";
 
-    private static final java.lang.String DAZN_LOGO = "Logo";
-    private static final java.lang.String FAQ_URL = "https://preprod-dazn.cs86.force.com/help/DE-en/FAQ";
-    private static final java.lang.String TERMS_OF_USE_URL = "a[href='https://preprod-dazn.cs86.force.com/help/DE-en/terms']";
-    private static final java.lang.String PRIVACY_URL = "a[href='https://preprod-dazn.cs86.force.com/help/DE-en/privacy']";
-    private static final java.lang.String HELP_URL = "a[href='https://preprod-dazn.cs86.force.com/help/DE-en']";
-    private static final java.lang.String IMPRINT_URL = "a[href='https://preprod-dazn.cs86.force.com/help/DE-en/impressum']";
-    private static final java.lang.String LANDING_PAGE_TITLE = "DAZN-Staging";
+    public static final java.lang.String DAZN_LOGO = "Logo";
+    public static final java.lang.String FAQ_URL = "https://preprod-dazn.cs86.force.com/help/DE-en/FAQ";
+    public static final java.lang.String TERMS_OF_USE_URL = "https://preprod-dazn.cs86.force.com/help/DE-en/terms";
+    public static final java.lang.String PRIVACY_URL = "https://preprod-dazn.cs86.force.com/help/DE-en/privacy";
+    public static final java.lang.String HELP_URL = "https://preprod-dazn.cs86.force.com/help/DE-en";
+    public static final java.lang.String IMPRINT_URL = "https://preprod-dazn.cs86.force.com/help/DE-en/impressum";
+    public static final java.lang.String LANDING_PAGE_TITLE = "DAZN-Staging";
 
 
     public static final java.lang.String HELP_ELEMENT = "id(\"app\")/div[1]/div[1]/div[1]/div[6]/div[1]/div[1]/ul[1]/li[1]/a[1]";
