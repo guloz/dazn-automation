@@ -11,7 +11,7 @@ public class HomeScheduleSports {
     private WebDriver driver;
     private int timeout = 15;
 
-    private final String pageUrl = "/en-DE/home/2seqw48gm0s0e8xnxz0j0osiy";
+    private final String pageUrl = "";
 
 
     @FindBy(name = "searchInput")

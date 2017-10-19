@@ -13,14 +13,14 @@ public class CreateAccountDetailsPage extends PageObject{
     private WebDriver driver;
     private int timeout = 15;
 
-    private final String CONTINUE_BUTTON = "button.Button.SubmitButton.primary.enabled.centerBtn";
-    public static final String FIRST_NAME = "button.Button.SubmitButton.primary.enabled.centerBtn";
-    public static final String LAST_NAME_ELEMENT = "button.Button.SubmitButton.primary.enabled.centerBtn";
-    public static final String EMAIL_ELEMENT = "button.Button.SubmitButton.primary.enabled.centerBtn";
-    public static final String PASSWORD_ELEMENT = "button.Button.SubmitButton.primary.enabled.centerBtn";
-    public static final String REPEAT_PASSWORD_ELEMENT = "button.Button.SubmitButton.primary.enabled.centerBtn";
-    public static final String SIGN_IN_LINK = "a[href='/account/signin']";
-    public static final String MARKETING_CHECKBOX = "#app div.Root.layout5.castConnectionStatus-noDevicesAvailable div:nth-of-type(1) div:nth-of-type(1) div:nth-of-type(2) form fieldset div:nth-of-type(4) div.Checkbox input[type='checkbox']";
+    private final String CONTINUE_BUTTON = "//";
+    private static final String FIRST_NAME = "";
+    private static final String LAST_NAME_ELEMENT = "";
+    private static final String EMAIL_ELEMENT = "";
+    private static final String PASSWORD_ELEMENT = "";
+    private static final String REPEAT_PASSWORD_ELEMENT = "";
+    private static final String SIGN_IN_LINK = "a[href='/account/signin']";
+    private static final String MARKETING_CHECKBOX = "";
 
     private final String pageLoadedText = "Your free month trial starts today. From 18.11.2017, pay 9.99 EUR per month. Your subscription is cancellable monthly.";
     private final String pageUrl = "/en-DE/account/signup";

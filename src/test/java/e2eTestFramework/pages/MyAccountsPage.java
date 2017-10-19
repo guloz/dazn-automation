@@ -16,27 +16,27 @@ public class MyAccountsPage {
     @CacheLookup
     private WebElement backToHome;
 
-    @FindBy(id = "j_id0:frmMyAccount:j_id167")
+    @FindBy(id = "")
     @CacheLookup
     private WebElement cancelSubscription;
 
-    @FindBy(id = "j_id0:frmMyAccount:PasswordChange")
+    @FindBy(id = "")
     @CacheLookup
     private WebElement change1;
 
-    @FindBy(css = "a[href='ChangePaymentMethod']")
+    @FindBy(css = "")
     @CacheLookup
     private WebElement change2;
 
-    @FindBy(css = "#j_id0:frmMyAccount:theRepeat:0:j_id206 a.custStyleBtn1")
+    @FindBy(css = "")
     @CacheLookup
     private WebElement deregisterDevice1;
 
-    @FindBy(css = "#j_id0:frmMyAccount:theRepeat:1:j_id206 a.custStyleBtn1")
+    @FindBy(css = "")
     @CacheLookup
     private WebElement deregisterDevice2;
 
-    @FindBy(css = "#j_id0:frmMyAccount:theRepeat:2:j_id206 a.custStyleBtn1")
+    @FindBy(css = "")
     @CacheLookup
     private WebElement deregisterDevice3;
 
@@ -46,11 +46,11 @@ public class MyAccountsPage {
 
     private final String deutschValue = "de";
 
-    @FindBy(id = "j_id0:frmMyAccount:editName")
+    @FindBy(id = "")
     @CacheLookup
     private WebElement edit1;
 
-    @FindBy(id = "j_id0:frmMyAccount:emailEdit")
+    @FindBy(id = "")
     @CacheLookup
     private WebElement edit2;
 
@@ -80,7 +80,7 @@ public class MyAccountsPage {
     @CacheLookup
     private WebElement myAccount;
 
-    @FindBy(css = "a.btn.txtUpperCase.custStyleBtn.wrapper.closeBtn.desktop")
+    @FindBy(css = "")
     @CacheLookup
     private WebElement ok;
 
@@ -97,26 +97,17 @@ public class MyAccountsPage {
     private WebElement paymentHistory;
 
 
-    @FindBy(id = "j_id0:frmMyAccount:idSaveLanguageBtn")
+    @FindBy(id = "")
     @CacheLookup
     private WebElement saveLanguage;
 
-    @FindBy(name = "j_id0:frmMyAccount:j_id229")
+    @FindBy(name = "")
     @CacheLookup
     private WebElement sendMeExclusiveContentNews;
 
-    @FindBy(id = "j_id0:frmMyAccount:ConfirmDevicesSignOut")
+    @FindBy(id = "")
     @CacheLookup
     private WebElement signOutFromAllDevices;
-
-
-    @FindBy(id = "j_id0:frmMyAccount:j_id213")
-    @CacheLookup
-    private WebElement viewMore3;
-
-    @FindBy(css = "a.closeBtn.mobile")
-    @CacheLookup
-    private WebElement x;
 
     public MyAccountsPage() {
     }
@@ -238,10 +229,6 @@ public class MyAccountsPage {
         return this;
     }
 
-    public MyAccountsPage clickViewMore3Link() {
-        viewMore3.click();
-        return this;
-    }
 
     public MyAccountsPage fill() {
         setEnglishRadioButtonField();

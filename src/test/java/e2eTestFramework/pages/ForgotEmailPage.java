@@ -25,11 +25,11 @@ public class ForgotEmailPage {
     @CacheLookup
     private WebElement forgotEmailpleaseEnterYourDetailsTo2;
 
-    @FindBy(css = "button.Button.SubmitButton.primary.disabled.centerBtn")
+    @FindBy(css = "")
     @CacheLookup
     private WebElement getEmail;
 
-    @FindBy(css = "#app div.Root.layout5.castConnectionStatus-noDevicesAvailable div:nth-of-type(1) div:nth-of-type(1) div:nth-of-type(2) form div:nth-of-type(2) div:nth-of-type(1) select")
+    @FindBy(css = "")
     @CacheLookup
     private WebElement last4DigitsOfYourCard1;
 
@@ -37,7 +37,7 @@ public class ForgotEmailPage {
     @CacheLookup
     private WebElement last4DigitsOfYourCard2;
 
-    private final String pageLoadedText = "ti=5318804&amp;amp;Ver=2\" height=\"0\" width=\"0\" style=\"display:none; visibility: hidden;\"&gt;";
+    private final String pageLoadedText = "";
 
     private final String pageUrl = "/en-DE/account/remember-email";
 
@@ -136,16 +136,5 @@ public class ForgotEmailPage {
         clickGetEmailButton();
         return this;
     }
-
-
-//    public ForgotEmailPage unsetLast4DigitsOfYourCardDropDownListField() {
-//        return unsetLast4DigitsOfYourCardDropDownListField(data.get("LAST_4_DIGITS_OF_YOUR_CARD"));
-//    }
-
-
-//    public ForgotEmailPage unsetLast4DigitsOfYourCardDropDownListField(String last4DigitsOfYourCardValue) {
-//        new Select(last4DigitsOfYourCard).deselectByVisibleText(last4DigitsOfYourCardValue);
-//        return this;
-//    }
 
 }

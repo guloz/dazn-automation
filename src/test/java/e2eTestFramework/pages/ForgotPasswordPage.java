@@ -11,11 +11,11 @@ public class ForgotPasswordPage {
     private WebDriver driver;
     private int timeout = 15;
 
-    @FindBy(css = "a.linkButton")
+    @FindBy(css = "")
     @CacheLookup
     private WebElement forgotEmailAddress;
 
-    private final String pageLoadedText = "ti=5318804&amp;amp;Ver=2\" height=\"0\" width=\"0\" style=\"display:none; visibility: hidden;\"&gt;";
+    private final String pageLoadedText = "";
 
     private final String pageUrl = "/en-DE/account/forgot-password";
 
@@ -23,7 +23,7 @@ public class ForgotPasswordPage {
     @CacheLookup
     private WebElement resetYourPasswordpleaseEnterYourEmail;
 
-    @FindBy(css = "button.Button.SubmitButton.primary.disabled.centerBtn")
+    @FindBy(css = "")
     @CacheLookup
     private WebElement send;
 

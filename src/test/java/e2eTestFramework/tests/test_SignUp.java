@@ -4,10 +4,12 @@ import com.tngtech.java.junit.dataprovider.DataProviderRunner;
 import e2eTestFramework.common.BaseTest;
 import e2eTestFramework.common.PageObject;
 import e2eTestFramework.pages.LandingPage;
+import e2eTestFramework.pages.SignUpPage;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -19,30 +21,20 @@ import static e2eTestFramework.pages.LandingPage.BASE_URL;
 
 import static org.junit.Assert.assertEquals;
 @RunWith(DataProviderRunner.class)
-public class SignUp extends BaseTest {
+public class test_SignUp extends BaseTest {
 
     PageObject pageObject;
     LandingPage landingPage;
-
-//    @DataProvider
-//    public static Object[][] landingPageElements() {
-//        return new Object[][]{
-//
-//                {BASE_URL}
-//        };
-//    }
+    SignUpPage signUpPage;
 
 
     @Test
-//    @UseDataProvider("landingPageElements")
-        public void signUp(WebDriver driver) {
+    public void signUp() {
+        WebDriver driver;
+        System.setProperty(CHROME_DRIVER, CHROME_DRIVER_LOCATION);
+        driver = new ChromeDriver();
 
-        this.landingPage.clickFaqLink();
-        assertEquals(LANDING_PAGE_TITLE, driver.getTitle());
-        assertEquals(BASE_URL, driver.getCurrentUrl());
-        this.landingPage.clickFaqLink();
+        landingPage.openLandingPage(driver);
 
-        driver.quit();
-    }
-}
+    }}
 

@@ -31,7 +31,7 @@ public class SignInPage {
     @CacheLookup
     private WebElement signUp;
 
-    @FindBy(css = "button.Button.SubmitButton.primary.enabled.centerBtn")
+    @FindBy(css = "")
     @CacheLookup
     private WebElement startWatching;
 

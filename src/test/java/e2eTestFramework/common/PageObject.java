@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
@@ -23,10 +24,9 @@ public class PageObject {
     public static final int TIMEOUT_TEN_SECONDS = 10;
     public static final int POLLING_TIME_IN_MILLISECONDS = 500;
 
-    protected java.lang.String pageTitle  ="DAZN-Staging";
-    protected WebDriver driver;
+    static WebDriver driver;
 
-    public static final java.lang.String BASE_URL = "https://stag.dazn.com/";
+    public static final java.lang.String BASE_URL = "https://stag.dazn.com/en-DE";
     public static final java.lang.String DAZN_LOGO = "Logo";
     public static final java.lang.String FAQ = "https://preprod-dazn.cs86.force.com/help/DE-en/FAQ";
     public static final java.lang.String TERMS_OF_USE = "a[href='https://preprod-dazn.cs86.force.com/help/DE-en/terms']";
@@ -63,7 +63,8 @@ public class PageObject {
 
     public PageObject(WebDriver driver){
         this.driver = driver;
-        this.pageTitle = driver.getTitle();
+        PageFactory.initElements(driver, this);
+
     }
 
     public java.lang.String getPageTitle(){
@@ -71,9 +72,8 @@ public class PageObject {
         return title;
     }
 
-    public PageObject clickFaqLink() {
+    public void clickFaqLink() {
         faq.click();
-        return this;
     }
 
     public PageObject clickHelpLink() {
@@ -97,11 +97,6 @@ public class PageObject {
         return this;
     }
 
-    public boolean verifyBasePageTitle() {
-        java.lang.String expectedPageTitle=pageTitle;
-        return getPageTitle().contains(expectedPageTitle);
-    }
-
     private Wait<WebDriver> getWebDriverWait(WebDriver driver) {
         return (Wait<WebDriver>) new FluentWait<WebDriver>(driver)
                 .withTimeout(TIMEOUT_TEN_SECONDS, TimeUnit.SECONDS)
@@ -109,18 +104,4 @@ public class PageObject {
                 .ignoring(NoSuchElementException.class).withMessage("Time out" + TIMEOUT_TEN_SECONDS + "seconds");
     }
 
-    public PageObject(WebDriver driver, String pageTitle){
-        this.driver = driver;
-        this.pageTitle = driver.getTitle();
-        Wait<WebDriver> wait = getWebDriverWait(driver);
-        wait.until(ExpectedConditions.titleContains(java.lang.String.valueOf(pageTitle)));
-
-    }
-
-    public PageObject(WebDriver driver, By locator){
-        this.driver = driver;
-        this.pageTitle = driver.getTitle();
-        Wait<WebDriver> wait = getWebDriverWait(driver);
-        wait.until(ExpectedConditions.presenceOfElementLocated(locator));
-    }
 }
