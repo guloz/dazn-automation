@@ -1,14 +1,12 @@
 package e2eTestFramework.pages;
 
-import java.util.Map;
-
 import e2eTestFramework.common.PageObject;
 import junit.framework.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.support.CacheLookup;
-import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.CacheLookup;
+import org.openqa.selenium.support.FindBy;
 
 public class LandingPage extends PageObject {
 
@@ -38,7 +36,6 @@ public class LandingPage extends PageObject {
 
     public static void openLandingPage(WebDriver driver) {
         driver.get(BASE_URL);
-        driver.findElement(By.linkText("Sign in"));
     }
 
     public static void clickSignInLink(WebDriver driver) {
@@ -49,7 +46,7 @@ public class LandingPage extends PageObject {
 //        WebDriverWait wait = new WebDriverWait(driver, 30);
 //        wait.until(ExpectedConditions.visibilityOfElementLocated(By.partialLinkText("Dazn")));
         String text = "9,99€ per month after trial, cancel monthly.";
-        String langingPageText = driver.findElement(By.xpath("//div[@class='RichText.subtitle']")).getText();
+        String langingPageText = driver.findElement(By.xpath("//div[@class='RichText subtitle']")).getText();
         Assert.assertTrue("Text not found!", langingPageText.contains(text));
  }
     }

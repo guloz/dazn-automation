@@ -1,4 +1,6 @@
 package e2eTestFramework.tests;
 
-public class test_MyAccounts {
+import e2eTestFramework.common.BaseTest;
+
+public class test_MyAccounts extends BaseTest{
 }

@@ -1,11 +1,12 @@
 package e2eTestFramework.pages;
 
-import java.util.Map;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+
+import java.util.Map;
 
 public class ForgotEmailPage {
     private Map<String, String> data;
