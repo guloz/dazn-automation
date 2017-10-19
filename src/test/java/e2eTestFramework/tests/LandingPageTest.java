@@ -2,10 +2,13 @@ package e2eTestFramework.tests;
 
 import e2eTestFramework.common.BaseTest;
 import e2eTestFramework.pages.LandingPage;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+
+import static e2eTestFramework.common.PageObject.*;
 
 
 public class LandingPageTest extends BaseTest {
@@ -21,13 +24,16 @@ public class LandingPageTest extends BaseTest {
     }
 
     @Test
-    public void signIn_checkCorrectTextExist() {
-
+    public void landingPage_checkElementsExist() {
         landingPage.openLandingPage();
         landingPage.waitUntilLogoPresent();
-        landingPage.checkPageText();
+        landingPage.checkText_RichText_Subtitle();
+        landingPage.checkLinkTextExist(SIGNIN_LINK_TEXT);
+        Assert.assertTrue(landingPage.verifyAllLinkText());
+        landingPage.isElementPresent(landingPage.signupbutton);
+    }
 
         //        driver.quit();
     }
-}
+
 

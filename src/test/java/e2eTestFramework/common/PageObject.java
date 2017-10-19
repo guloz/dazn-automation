@@ -27,37 +27,53 @@ public class PageObject {
     public static final java.lang.String SIGN_UP_URL = "https://stag.dazn.com/en-DE/account/signup";
 
     private static final java.lang.String DAZN_LOGO = "Logo";
-    private static final java.lang.String FAQ = "https://preprod-dazn.cs86.force.com/help/DE-en/FAQ";
-    private static final java.lang.String TERMS_OF_USE = "a[href='https://preprod-dazn.cs86.force.com/help/DE-en/terms']";
-    private static final java.lang.String PRIVACY = "a[href='https://preprod-dazn.cs86.force.com/help/DE-en/privacy']";
-    private static final java.lang.String HELP = "a[href='https://preprod-dazn.cs86.force.com/help/DE-en']";
-    private static final java.lang.String IMPRINT = "a[href='https://preprod-dazn.cs86.force.com/help/DE-en/impressum']";
+    private static final java.lang.String FAQ_URL = "https://preprod-dazn.cs86.force.com/help/DE-en/FAQ";
+    private static final java.lang.String TERMS_OF_USE_URL = "a[href='https://preprod-dazn.cs86.force.com/help/DE-en/terms']";
+    private static final java.lang.String PRIVACY_URL = "a[href='https://preprod-dazn.cs86.force.com/help/DE-en/privacy']";
+    private static final java.lang.String HELP_URL = "a[href='https://preprod-dazn.cs86.force.com/help/DE-en']";
+    private static final java.lang.String IMPRINT_URL = "a[href='https://preprod-dazn.cs86.force.com/help/DE-en/impressum']";
     private static final java.lang.String LANDING_PAGE_TITLE = "DAZN-Staging";
+
+
+    public static final java.lang.String HELP_ELEMENT = "id(\"app\")/div[1]/div[1]/div[1]/div[6]/div[1]/div[1]/ul[1]/li[1]/a[1]";
+    public static final java.lang.String TERMSOFUSE_ELEMENT = "id(\"app\")/div[1]/div[1]/div[1]/div[6]/div[1]/div[1]/ul[1]/li[3]/a[1]";
+    public static final java.lang.String FAQ_ELEMENT = "id(\"app\")/div[1]/div[1]/div[1]/div[6]/div[1]/div[1]/ul[1]/li[2]/a[1]";
+    public static final java.lang.String PRIVACY_ELEMENT= "id(\"app\")/div[1]/div[1]/div[1]/div[6]/div[1]/div[1]/ul[1]/li[4]/a[1]";
+    public static final java.lang.String IMPRINT_ELEMENT ="id(\"app\")/div[1]/div[1]/div[1]/div[6]/div[1]/div[1]/ul[1]/li[5]/a[1]";
+
+
+    public static final java.lang.String SIGNIN_LINK_TEXT = "Sign in";
+    public static final java.lang.String HELP_LINK_TEXT = "HELP";
+    public static final java.lang.String TERMSOFUSE_LINK_TEXT = "TERMS OF USE";
+    public static final java.lang.String FAQ_LINK_TEXT = "FAQ";
+    public static final java.lang.String PRIVACY_LINK_TEXT = "PRIVACY POLICY";
+    public static final java.lang.String IMPRINT_LINK_TEXT = "IMPRINT";
+
 
 
     @FindBy(className = DAZN_LOGO)
     @CacheLookup
     private WebElement daznlogo;
 
-    @FindBy(linkText = FAQ)
+    @FindBy(xpath = FAQ_ELEMENT)
     @CacheLookup
-    private WebElement faq;
+    protected WebElement faqElement;
 
-    @FindBy(css = HELP)
+    @FindBy(xpath = HELP_ELEMENT)
     @CacheLookup
-    private WebElement help;
+    protected WebElement helpElement;
 
-    @FindBy(css = IMPRINT)
+    @FindBy(xpath = IMPRINT_ELEMENT)
     @CacheLookup
-    private WebElement imprint;
+    protected WebElement imprintElement;
 
-    @FindBy(css = PRIVACY)
+    @FindBy(xpath = PRIVACY_ELEMENT)
     @CacheLookup
-    private WebElement privacyPolicy;
+    protected WebElement privacyElement;
 
-    @FindBy(css = TERMS_OF_USE)
+    @FindBy(xpath = TERMSOFUSE_ELEMENT)
     @CacheLookup
-    private WebElement termsOfUse;
+    protected WebElement termsOfUseElement;
 
     public PageObject(WebDriver driver){
         this.driver = driver;
@@ -70,30 +86,30 @@ public class PageObject {
         return title;
     }
 
-    public void clickFaqLink() {
-        faq.click();
-    }
-
+//    public void clickFaqLink() {
+//        faq.click();
+//    }
+//
     public PageObject clickHelpLink() {
-        help.click();
+        helpElement.click();
         return this;
     }
-
-    public PageObject clickImprintLink() {
-        imprint.click();
-        return this;
-    }
-
-    public PageObject clickPrivacyPolicyLink() {
-        privacyPolicy.click();
-        return this;
-    }
-
-
-    public PageObject clickTermsOfUseLink() {
-        termsOfUse.click();
-        return this;
-    }
+//
+//    public PageObject clickImprintLink() {
+//        imprint.click();
+//        return this;
+//    }
+//
+//    public PageObject clickPrivacyPolicyLink() {
+//        privacyPolicy.click();
+//        return this;
+//    }
+//
+//
+//    public PageObject clickTermsOfUseLink() {
+//        termsOfUse.click();
+//        return this;
+//    }
 
     private Wait<WebDriver> getWebDriverWait(WebDriver driver) {
         return (Wait<WebDriver>) new FluentWait<WebDriver>(driver)

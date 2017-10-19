@@ -1,10 +1,12 @@
 package e2eTestFramework.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.Map;
@@ -22,11 +24,11 @@ public class SignInPage {
 
     @FindBy(name = "email")
     @CacheLookup
-    private WebElement signInemailAddresspasswordforgotYourPassword1;
+    private WebElement xxx;
 
     @FindBy(name = "password")
     @CacheLookup
-    private WebElement signInemailAddresspasswordforgotYourPassword2;
+    private WebElement xxxx;
 
     @FindBy(css = "a[href='/account/signup']")
     @CacheLookup
@@ -54,34 +56,12 @@ public class SignInPage {
         this.timeout = timeout;
     }
 
-
-    public SignInPage clickPasswordLink() {
-        password.click();
-        return this;
-    }
-
-
-    public SignInPage clickSignUpLink() {
-        signUp.click();
-        return this;
-    }
-
-
-    public SignInPage clickStartWatchingButton() {
-        startWatching.click();
-        return this;
-    }
-
-
-    public SignInPage fill() {
-        setSignInemailAddresspasswordforgotYourPassword1PasswordField();
-        setSignInemailAddresspasswordforgotYourPassword2PasswordField();
-        return this;
-    }
-
-    public SignInPage fillAndSubmit() {
-        fill();
-        return submit();
+    public void fillinAndSubmitSignInForm() {
+        WebDriverWait wait = new WebDriverWait(driver, 30);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("SignInView")));
+        driver.findElement(By.name("email")).sendKeys("daznautomation@gmail.com");
+        driver.findElement(By.name("password")).sendKeys("123456");
+        driver.findElement(By.name("submitButton")).click();
     }
 
 
@@ -91,7 +71,7 @@ public class SignInPage {
 
 
     public SignInPage setSignInemailAddresspasswordforgotYourPassword1PasswordField(String signInemailAddresspasswordforgotYourPassword1Value) {
-        signInemailAddresspasswordforgotYourPassword1.sendKeys(signInemailAddresspasswordforgotYourPassword1Value);
+        xxx.sendKeys(signInemailAddresspasswordforgotYourPassword1Value);
         return this;
     }
 
@@ -102,13 +82,7 @@ public class SignInPage {
 
 
     public SignInPage setSignInemailAddresspasswordforgotYourPassword2PasswordField(String signInemailAddresspasswordforgotYourPassword2Value) {
-        signInemailAddresspasswordforgotYourPassword2.sendKeys(signInemailAddresspasswordforgotYourPassword2Value);
-        return this;
-    }
-
-
-    public SignInPage submit() {
-        clickStartWatchingButton();
+        xxxx.sendKeys(signInemailAddresspasswordforgotYourPassword2Value);
         return this;
     }
 
