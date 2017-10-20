@@ -17,17 +17,26 @@ public class SignInPage extends PageObject{
 
     private int timeout = 15;
 
-    private static final String USER_EMAIL_ELEMENT = "id(\"app\")/div[1]/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]";
-    private static final String USER_PASSWORD = "id(\"app\")/div[1]/div[1]/div[1]/div[2]/form[1]/div[1]/div[2]";
-    private static final String START_WATCHING_BUTTON = "id(\"app\")/div[1]/div[1]/div[1]/div[2]/form[1]/div[3]";
-    private static final String SIGN_IN_TITLE_ELEMENT = "id(\"app\")/div[1]/div[1]/div[1]/div[2]/h1[1]";
-    private static final String FORGOT_PASSWORD_LINK_ELEMENT = "id(\\\"app\\\")/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/p[1]/a[1]";
-    private static final String SIGN_UP_LINK_ELEMENT = "id(\"app\")/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/p[1]/a[1]";
+    private static final String USER_EMAIL_ELEMENT =            "id(\"app\")/div[1]/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/input[1]";
+    private static final String USER_PASSWORD_ELEMENT=          "id(\"app\")/div[1]/div[1]/div[1]/div[2]/form[1]/div[1]/div[2]/input[1]";
+    private static final String SUBMIT_BUTTON =                 "//*[@id=\"app\"]/div/div[1]/div[1]/div[2]/form/div[3]/button/span[2]";
+    private static final String SIGN_IN_TITLE_ELEMENT =         "id(\"app\")/div[1]/div[1]/div[1]/div[2]/h1[1]";
+    private static final String FORGOT_PASSWORD_LINK_ELEMENT =  "id(\"app\")/div[1]/div[1]/div[1]/div[2]/form[1]/div[2]/div[1]/p[1]/a[1]";
+    private static final String NEW_TO_DAZN =                   "id(\"app\")/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/p[1]/span[1]";
+    private static final String SIGN_UP_LINK_ELEMENT =          "id(\"app\")/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/p[1]/a[1]";
 
-    private static final String SIGN_IN_TITLE_TEXT="SIGN IN";
-    private static final String SIGN_UP_LINK_TEXT="SIGN UP";
-    private static final String FORGOT_PASSWORD_TEXT="password";
-    private static final String SIGNIN_DAZN_LOGO = "id(\"app\")/div[1]/div[1]/div[1]/div[1]";
+
+    private static final String SIGN_IN_TITLE_TEXT=             "SIGN IN";
+    private static final String SIGN_UP_LINK_TEXT=              "SIGN UP";
+    private static final String FORGOT_PASSWORD_TEXT=           "password?";
+    private static final String SIGNIN_DAZN_LOGO =              "id(\"app\")/div[1]/div[1]/div[1]/div[1]";
+
+    private static final String SIGNIN_HELP_ELEMENT =            "id(\"app\")/div[1]/div[1]/div[2]/div[1]/div[1]/ul[1]/li[1]/a[1]";
+    private static final String SIGNIN_TERMSOFUSE_ELEMENT =      "id(\"app\")/div[1]/div[1]/div[2]/div[1]/div[1]/ul[1]/li[3]/a[1]";
+    private static final String SIGNIN_FAQ_ELEMENT =             "id(\"app\")/div[1]/div[1]/div[2]/div[1]/div[1]/ul[1]/li[2]/a[1]";
+    private static final String SIGNIN_PRIVACY_ELEMENT =         "id(\"app\")/div[1]/div[1]/div[2]/div[1]/div[1]/ul[1]/li[4]/a[1]";
+    private static final String SIGNIN_REDEEM_ELEMENT =          "id(\"app\")/div[1]/div[1]/div[2]/div[1]/div[1]/ul[1]/li[5]/a[1]";
+    private static final String SIGNIN_IMPRINT_ELEMENT =         "id(\"app\")/div[1]/div[1]/div[2]/div[1]/div[1]/ul[1]/li[6]/a[1]";
 
     @FindBy(className = SIGNIN_DAZN_LOGO)
     @CacheLookup
@@ -37,11 +46,11 @@ public class SignInPage extends PageObject{
     @CacheLookup
     public WebElement userEmailElement;
 
-    @FindBy(xpath = USER_PASSWORD)
+    @FindBy(xpath = USER_PASSWORD_ELEMENT)
     @CacheLookup
     public WebElement userPasswordElement;
 
-    @FindBy(xpath = START_WATCHING_BUTTON)
+    @FindBy(xpath = SUBMIT_BUTTON)
     @CacheLookup
     public WebElement startWatchingElement;
 
@@ -61,23 +70,27 @@ public class SignInPage extends PageObject{
     @CacheLookup
     private WebElement daznlogo;
 
-    @FindBy(xpath = FAQ_ELEMENT)
+    @FindBy(xpath = SIGNIN_FAQ_ELEMENT)
     @CacheLookup
     private WebElement faqElement;
 
-    @FindBy(xpath = HELP_ELEMENT)
+    @FindBy(xpath = SIGNIN_HELP_ELEMENT)
     @CacheLookup
     private WebElement helpElement;
 
-    @FindBy(xpath = IMPRINT_ELEMENT)
+    @FindBy(xpath = SIGNIN_IMPRINT_ELEMENT)
     @CacheLookup
     private WebElement imprintElement;
 
-    @FindBy(xpath = PRIVACY_ELEMENT)
+    @FindBy(xpath = SIGNIN_REDEEM_ELEMENT)
+    @CacheLookup
+    private WebElement redeemElement;
+
+    @FindBy(xpath = SIGNIN_PRIVACY_ELEMENT)
     @CacheLookup
     private WebElement privacyElement;
 
-    @FindBy(xpath = TERMSOFUSE_ELEMENT)
+    @FindBy(xpath = SIGNIN_TERMSOFUSE_ELEMENT)
     @CacheLookup
     private WebElement termsOfUseElement;
 
@@ -119,9 +132,9 @@ public class SignInPage extends PageObject{
     public void fillinAndSubmitSignInForm() {
         WebDriverWait wait = new WebDriverWait(driver, 5);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("SignInView")));
-        driver.findElement(By.name("email")).sendKeys("daznautomation@gmail.com");
-        driver.findElement(By.name("password")).sendKeys("123456");
-        driver.findElement(By.name("submitButton")).click();
+        userEmailElement.sendKeys("daznautomation@gmail.com");
+        userPasswordElement.sendKeys("123456");
+        startWatchingElement.click();
     }
 
 
@@ -145,12 +158,12 @@ public class SignInPage extends PageObject{
         return this;
     }
 
-    public void checkLandingPageFooterUrlValues(){
-        Assert.assertEquals(helpElement.getAttribute("href"), HELP_URL);
-        Assert.assertEquals(faqElement.getAttribute("href"), FAQ_URL);
-        Assert.assertEquals(privacyElement.getAttribute("href"), PRIVACY_URL);
-        Assert.assertEquals(termsOfUseElement.getAttribute("href"), TERMS_OF_USE_URL);
-        Assert.assertEquals(imprintElement.getAttribute("href"), IMPRINT_URL);
-
+    public void checkSingInPageFooterUrlValues(){
+        Assert.assertEquals(HELP_URL ,helpElement.getAttribute("href"));
+        Assert.assertEquals(FAQ_URL, faqElement.getAttribute("href"));
+        Assert.assertEquals(PRIVACY_URL, privacyElement.getAttribute("href"));
+        Assert.assertEquals(TERMS_OF_USE_URL, termsOfUseElement.getAttribute("href"));
+        Assert.assertEquals(IMPRINT_URL, imprintElement.getAttribute("href"));
+        Assert.assertEquals(REDEEM_URL, redeemElement.getAttribute("href"));
     }
 }

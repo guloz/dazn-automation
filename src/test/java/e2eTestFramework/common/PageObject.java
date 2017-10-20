@@ -25,57 +25,31 @@ public class PageObject {
 
     public WebDriver driver;
 
-    protected static final java.lang.String BASE_URL = "https://stag.dazn.com/en-DE";
-    public static final java.lang.String SIGN_IN_URL = "https://stag.dazn.com/en-DE/account/signin";
-    public static final java.lang.String SIGN_UP_URL = "https://stag.dazn.com/en-DE/account/signup";
+    protected static final String BASE_URL = "https://stag.dazn.com/en-DE";
+    public static final String SIGN_IN_URL = "https://stag.dazn.com/en-DE/account/signin";
+    public static final String SIGN_UP_URL = "https://stag.dazn.com/en-DE/account/signup";
 
-    protected static final java.lang.String DAZN_LOGO = "Logo";
-    protected static final java.lang.String FAQ_URL = "https://preprod-dazn.cs86.force.com/help/DE-en/FAQ";
-    protected static final java.lang.String TERMS_OF_USE_URL = "https://preprod-dazn.cs86.force.com/help/DE-en/terms";
-    protected static final java.lang.String PRIVACY_URL = "https://preprod-dazn.cs86.force.com/help/DE-en/privacy";
-    protected static final java.lang.String HELP_URL = "https://preprod-dazn.cs86.force.com/help/DE-en";
-    protected static final java.lang.String IMPRINT_URL = "https://preprod-dazn.cs86.force.com/help/DE-en/impressum";
-    public static final java.lang.String LANDING_PAGE_TITLE = "DAZN-Staging";
+    protected static final String DAZN_LOGO = "Logo";
+    protected static final String FAQ_URL = "https://preprod-dazn.cs86.force.com/help/DE-en/FAQ";
+    protected static final String TERMS_OF_USE_URL = "https://preprod-dazn.cs86.force.com/help/DE-en/terms";
+    protected static final String PRIVACY_URL = "https://preprod-dazn.cs86.force.com/help/DE-en/privacy";
+    protected static final String HELP_URL = "https://preprod-dazn.cs86.force.com/help/DE-en";
+    protected static final String IMPRINT_URL = "https://preprod-dazn.cs86.force.com/help/DE-en/impressum";
+    protected static final String REDEEM_URL = "https://stag.dazn.com/redeem";
+
+    public static final String SIGNIN_LINK_TEXT = "Sign in";
+    public static final String HELP_LINK_TEXT = "HELP";
+    public static final String TERMSOFUSE_LINK_TEXT = "TERMS OF USE";
+    public static final String FAQ_LINK_TEXT = "FAQ";
+    public static final String PRIVACY_LINK_TEXT = "PRIVACY POLICY";
+    public static final String IMPRINT_LINK_TEXT = "IMPRINT";
 
 
-    protected static final java.lang.String HELP_ELEMENT = "id(\"app\")/div[1]/div[1]/div[1]/div[6]/div[1]/div[1]/ul[1]/li[1]/a[1]";
-    protected static final java.lang.String TERMSOFUSE_ELEMENT = "id(\"app\")/div[1]/div[1]/div[1]/div[6]/div[1]/div[1]/ul[1]/li[3]/a[1]";
-    protected static final java.lang.String FAQ_ELEMENT = "id(\"app\")/div[1]/div[1]/div[1]/div[6]/div[1]/div[1]/ul[1]/li[2]/a[1]";
-    protected static final java.lang.String PRIVACY_ELEMENT= "id(\"app\")/div[1]/div[1]/div[1]/div[6]/div[1]/div[1]/ul[1]/li[4]/a[1]";
-    protected static final java.lang.String IMPRINT_ELEMENT ="id(\"app\")/div[1]/div[1]/div[1]/div[6]/div[1]/div[1]/ul[1]/li[5]/a[1]";
-
-
-    public static final java.lang.String SIGNIN_LINK_TEXT = "Sign in";
-    public static final java.lang.String HELP_LINK_TEXT = "HELP";
-    public static final java.lang.String TERMSOFUSE_LINK_TEXT = "TERMS OF USE";
-    public static final java.lang.String FAQ_LINK_TEXT = "FAQ";
-    public static final java.lang.String PRIVACY_LINK_TEXT = "PRIVACY POLICY";
-    public static final java.lang.String IMPRINT_LINK_TEXT = "IMPRINT";
 
 
     @FindBy(className = DAZN_LOGO)
     @CacheLookup
     private WebElement daznlogo;
-
-    @FindBy(xpath = FAQ_ELEMENT)
-    @CacheLookup
-    protected WebElement faqElement;
-
-    @FindBy(xpath = HELP_ELEMENT)
-    @CacheLookup
-    public WebElement helpElement;
-
-    @FindBy(xpath = IMPRINT_ELEMENT)
-    @CacheLookup
-    protected WebElement imprintElement;
-
-    @FindBy(xpath = PRIVACY_ELEMENT)
-    @CacheLookup
-    protected WebElement privacyElement;
-
-    @FindBy(xpath = TERMSOFUSE_ELEMENT)
-    @CacheLookup
-    protected WebElement termsOfUseElement;
 
     public PageObject(WebDriver driver){
         this.driver = driver;
@@ -83,8 +57,8 @@ public class PageObject {
 
     }
 
-    public java.lang.String getPageTitle(){
-        java.lang.String title = driver.getTitle();
+    public String getPageTitle(){
+        String title = driver.getTitle();
         return title;
     }
 
@@ -99,30 +73,6 @@ public class PageObject {
             { return false; }
             return true;
         }
-    }
-
-    public void clickFaqLink() {
-        faqElement.click();
-    }
-
-    public PageObject clickHelpLink() {
-        helpElement.click();
-        return this;
-    }
-
-    public PageObject clickImprintLink() {
-        imprintElement.click();
-        return this;
-    }
-
-    public PageObject clickPrivacyPolicyLink() {
-        privacyElement.click();
-        return this;
-    }
-
-    public PageObject clickTermsOfUseLink() {
-        termsOfUseElement.click();
-        return this;
     }
 
     private Wait<WebDriver> getWebDriverWait(WebDriver driver) {

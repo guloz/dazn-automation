@@ -1,12 +1,10 @@
 package backEndRestTesting;
 
 import com.jayway.restassured.http.ContentType;
-import com.jayway.restassured.response.Response;
-import static org.hamcrest.core.IsNull.notNullValue;
-
 import org.junit.Test;
 
 import static com.jayway.restassured.RestAssured.given;
+import static org.hamcrest.core.IsNull.notNullValue;
 
 
 public class resourceStringsTest {
@@ -16,7 +14,6 @@ public class resourceStringsTest {
     @Test
     public void testResourceStrings_OPTIONS_EndPoint() {
 
-        String response =
                 given()
                         .header("Accept", "application/json;charset=UTF-8")
                         .when()
@@ -32,10 +29,10 @@ public class resourceStringsTest {
 
     }
 
+
     @Test
     public void testResourceStritestResourceStrings_OPTIONS_EndPointngs_GET_EndPoint() {
 
-        String response =
                 given()
                         .header("Accept", "application/json;charset=UTF-8")
                         .when()

@@ -20,16 +20,18 @@ public class SignInTest extends BaseTest {
     }
 
     @Test
-    public void signIn_checkCorrectTextExist() {
+    public void signInPageTest() {
 
         signInPage.openSignInPage();
         signInPage.waitUntilLogoPresent();
         signInPage.checkText_SignIn_Title();
-//        signInPage.checkLinkTextsExist();
-//        signInPage.isElementPresent(signInPage.startWatchingElement);
-//        signInPage.checkLandingPageFooterUrlValues();
-//        signInPage.fillinAndSubmitSignInForm();
-        driver.quit();
+        signInPage.checkLinkTextsExist();
+        signInPage.isElementPresent(signInPage.startWatchingElement);
+        signInPage.checkSingInPageFooterUrlValues();
+        signInPage.fillinAndSubmitSignInForm();
+        signInPage.waitUntilLogoPresent();
+        System.out.println(driver.getCurrentUrl());
+//        driver.quit();
 
     }
 }
