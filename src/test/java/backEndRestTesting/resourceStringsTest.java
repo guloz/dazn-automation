@@ -16,20 +16,19 @@ public class resourceStringsTest {
     @Test
     public void testResourceStrings_OPTIONS_EndPoint() {
 
-        Response response =
+        String response =
                 given()
                         .header("Accept", "application/json;charset=UTF-8")
                         .when()
                         .options(RESOURCE_STRINGS_URL)
+                        .prettyPeek()
                         .then()
                         .statusCode(200)
                         .contentType(ContentType.JSON)
                         .header("Access-Control-Allow-Methods", "GET,OPTIONS")
                         .extract()
-                        .response();
-
-        System.out.println(response.prettyPrint());
-        System.out.println(response.getHeaders());
+                        .response()
+                        .prettyPrint();
 
     }
 
@@ -41,6 +40,7 @@ public class resourceStringsTest {
                         .header("Accept", "application/json;charset=UTF-8")
                         .when()
                         .get(RESOURCE_STRINGS_URL)
+                        .prettyPeek()
                         .then()
                         .contentType(ContentType.JSON)
                         .statusCode(200)
@@ -49,6 +49,5 @@ public class resourceStringsTest {
                         .response()
                         .prettyPrint();
 
-        System.out.println(" RESOURCE STRINGS GET: " + response);
     }
 }

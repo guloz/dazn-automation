@@ -25,7 +25,7 @@ public class SignInTest extends BaseTest {
         signInPage.openSignInPage();
         signInPage.waitUntilLogoPresent();
         signInPage.checkText_SignIn_Title();
-        signInPage.checkLinkTextsExist();
+//        signInPage.checkLinkTextsExist();
 //        signInPage.isElementPresent(signInPage.startWatchingElement);
 //        signInPage.checkLandingPageFooterUrlValues();
 //        signInPage.fillinAndSubmitSignInForm();
