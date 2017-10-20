@@ -44,9 +44,6 @@ public class PageObject {
     public static final String PRIVACY_LINK_TEXT = "PRIVACY POLICY";
     public static final String IMPRINT_LINK_TEXT = "IMPRINT";
 
-
-
-
     @FindBy(className = DAZN_LOGO)
     @CacheLookup
     private WebElement daznlogo;

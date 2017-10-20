@@ -1,6 +1,7 @@
 package e2eTestFramework.tests;
 
 import e2eTestFramework.common.BaseTest;
+import e2eTestFramework.pages.HomeScheduleSports;
 import e2eTestFramework.pages.SignInPage;
 import org.junit.Before;
 import org.junit.Test;
@@ -11,6 +12,7 @@ public class SignInTest extends BaseTest {
 
     private WebDriver driver;
     private SignInPage signInPage;
+    private HomeScheduleSports homeScheduleSports;
 
     @Before
     public void setUp() {
@@ -29,9 +31,11 @@ public class SignInTest extends BaseTest {
         signInPage.isElementPresent(signInPage.startWatchingElement);
         signInPage.checkSingInPageFooterUrlValues();
         signInPage.fillinAndSubmitSignInForm();
-        signInPage.waitUntilLogoPresent();
-        System.out.println(driver.getCurrentUrl());
-//        driver.quit();
+        //TODO after submit button, user is on Home Page - VERIFY this by below.
+//        homeScheduleSports.waitForHomeLinkToLoadOnPage();
+//        homeScheduleSports.verifyPageUrl();
+
+        driver.quit();
 
     }
 }

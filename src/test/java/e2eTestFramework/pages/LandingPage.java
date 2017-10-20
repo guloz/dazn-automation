@@ -25,12 +25,12 @@ public class LandingPage extends PageObject {
     private static final String SIGN_IN_ELEMENT = "id(\"app\")/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[4]/div[1]/p[1]/a[1]";
     private static final String SIGN_UP_BUTTON = "id(\"app\")/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/button[1]/span[2]";
 
-    protected static final String LANDINGPAGE_HELP_ELEMENT =            "id(\"app\")/div[1]/div[1]/div[1]/div[6]/div[1]/div[1]/ul[1]/li[1]/a[1]";
-    protected static final String LANDINGPAGE_TERMSOFUSE_ELEMENT =      "id(\"app\")/div[1]/div[1]/div[1]/div[6]/div[1]/div[1]/ul[1]/li[3]/a[1]";
-    protected static final String LANDINGPAGE_FAQ_ELEMENT =             "id(\"app\")/div[1]/div[1]/div[1]/div[6]/div[1]/div[1]/ul[1]/li[2]/a[1]";
-    protected static final String LANDINGPAGE_PRIVACY_ELEMENT =         "id(\"app\")/div[1]/div[1]/div[1]/div[6]/div[1]/div[1]/ul[1]/li[4]/a[1]";
-    protected static final String LANDINGPAGE_REDEEM_ELEMENT =          "id(\"app\")/div[1]/div[1]/div[1]/div[6]/div[1]/div[1]/ul[1]/li[5]/a[1]";
-    protected static final String LANDINGPAGE_IMPRINT_ELEMENT =         "id(\"app\")/div[1]/div[1]/div[1]/div[6]/div[1]/div[1]/ul[1]/li[6]/a[1]";
+    private static final String LANDINGPAGE_HELP_ELEMENT = "id(\"app\")/div[1]/div[1]/div[1]/div[6]/div[1]/div[1]/ul[1]/li[1]/a[1]";
+    private static final String LANDINGPAGE_TERMSOFUSE_ELEMENT = "id(\"app\")/div[1]/div[1]/div[1]/div[6]/div[1]/div[1]/ul[1]/li[3]/a[1]";
+    private static final String LANDINGPAGE_FAQ_ELEMENT = "id(\"app\")/div[1]/div[1]/div[1]/div[6]/div[1]/div[1]/ul[1]/li[2]/a[1]";
+    private static final String LANDINGPAGE_PRIVACY_ELEMENT = "id(\"app\")/div[1]/div[1]/div[1]/div[6]/div[1]/div[1]/ul[1]/li[4]/a[1]";
+    private static final String LANDINGPAGE_REDEEM_ELEMENT = "id(\"app\")/div[1]/div[1]/div[1]/div[6]/div[1]/div[1]/ul[1]/li[5]/a[1]";
+    private static final String LANDINGPAGE_IMPRINT_ELEMENT = "id(\"app\")/div[1]/div[1]/div[1]/div[6]/div[1]/div[1]/ul[1]/li[6]/a[1]";
 
     private int timeout = 15;
 
@@ -49,35 +49,34 @@ public class LandingPage extends PageObject {
 
     @FindBy(xpath = LANDINGPAGE_FAQ_ELEMENT)
     @CacheLookup
-    protected WebElement faqElement;
+    private WebElement faqElement;
 
     @FindBy(xpath = LANDINGPAGE_HELP_ELEMENT)
     @CacheLookup
-    protected WebElement helpElement;
+    private WebElement helpElement;
 
     @FindBy(xpath = LANDINGPAGE_IMPRINT_ELEMENT)
     @CacheLookup
-    protected WebElement imprintElement;
+    private WebElement imprintElement;
 
     @FindBy(xpath = LANDINGPAGE_REDEEM_ELEMENT)
     @CacheLookup
-    protected WebElement redeemElement;
+    private WebElement redeemElement;
 
     @FindBy(xpath = LANDINGPAGE_PRIVACY_ELEMENT)
     @CacheLookup
-    protected WebElement privacyElement;
+    private WebElement privacyElement;
 
     @FindBy(xpath = LANDINGPAGE_TERMSOFUSE_ELEMENT)
     @CacheLookup
-    protected WebElement termsOfUseElement;
+    private WebElement termsOfUseElement;
 
 
     public LandingPage(WebDriver driver) {
         super(driver);
     }
 
-    public void openLandingPage()
-    {
+    public void openLandingPage() {
         driver.get(BASE_URL);
     }
 
@@ -116,22 +115,33 @@ public class LandingPage extends PageObject {
         return linkTextMatches;
     }
 
-    public  void clickSignInLinkByLinkText(WebDriver driver) {
+    public void clickSignInLinkByLinkText(WebDriver driver) {
         driver.findElement(By.linkText("Sign in")).click();
     }
 
     // check sign up button exist
-    public boolean checkSignUpButtonDisplayed(){
+    public boolean checkSignUpButtonDisplayed() {
         Assert.assertEquals(true, signupbutton.isDisplayed());
         return true;
     }
 
-    public boolean isElementPresent(WebElement element){
+    public boolean isElementPresent(WebElement element) {
         {
-            if (element == null)
-            { return false; }
+            if (element == null) {
+                return false;
+            }
             return true;
         }
+    }
+
+    public void checkLandingPageFooterUrlValues() {
+        Assert.assertEquals(HELP_URL, helpElement.getAttribute("href"));
+        Assert.assertEquals(FAQ_URL, faqElement.getAttribute("href"));
+        Assert.assertEquals(PRIVACY_URL, privacyElement.getAttribute("href"));
+        Assert.assertEquals(TERMS_OF_USE_URL, termsOfUseElement.getAttribute("href"));
+        Assert.assertEquals(IMPRINT_URL, imprintElement.getAttribute("href"));
+        Assert.assertEquals(REDEEM_URL, redeemElement.getAttribute("href"));
+
     }
 
     public void clickFaqLink() {
@@ -156,15 +166,5 @@ public class LandingPage extends PageObject {
     public PageObject clickTermsOfUseLink() {
         termsOfUseElement.click();
         return this;
-    }
-
-    public void checkLandingPageFooterUrlValues(){
-        Assert.assertEquals(HELP_URL ,helpElement.getAttribute("href"));
-        Assert.assertEquals(FAQ_URL, faqElement.getAttribute("href"));
-        Assert.assertEquals(PRIVACY_URL, privacyElement.getAttribute("href"));
-        Assert.assertEquals(TERMS_OF_USE_URL, termsOfUseElement.getAttribute("href"));
-        Assert.assertEquals(IMPRINT_URL, imprintElement.getAttribute("href"));
-        Assert.assertEquals(REDEEM_URL, redeemElement.getAttribute("href"));
-//
     }
 }

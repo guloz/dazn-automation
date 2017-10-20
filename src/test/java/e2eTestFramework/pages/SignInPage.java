@@ -96,6 +96,7 @@ public class SignInPage extends PageObject{
 
     public SignInPage(WebDriver driver) {
         super(driver);
+
     }
 
     public void openSignInPage()
@@ -128,6 +129,14 @@ public class SignInPage extends PageObject{
         }
     }
 
+    public void checkSingInPageFooterUrlValues() {
+        Assert.assertEquals(HELP_URL, helpElement.getAttribute("href"));
+        Assert.assertEquals(FAQ_URL, faqElement.getAttribute("href"));
+        Assert.assertEquals(PRIVACY_URL, privacyElement.getAttribute("href"));
+        Assert.assertEquals(TERMS_OF_USE_URL, termsOfUseElement.getAttribute("href"));
+        Assert.assertEquals(IMPRINT_URL, imprintElement.getAttribute("href"));
+        Assert.assertEquals(REDEEM_URL, redeemElement.getAttribute("href"));
+    }
 
     public void fillinAndSubmitSignInForm() {
         WebDriverWait wait = new WebDriverWait(driver, 5);
@@ -136,9 +145,6 @@ public class SignInPage extends PageObject{
         userPasswordElement.sendKeys("123456");
         startWatchingElement.click();
     }
-
-
-
 
     public SignInPage verifyPageLoaded() {
         (new WebDriverWait(driver, timeout)).until(new ExpectedCondition<Boolean>() {
@@ -158,12 +164,5 @@ public class SignInPage extends PageObject{
         return this;
     }
 
-    public void checkSingInPageFooterUrlValues(){
-        Assert.assertEquals(HELP_URL ,helpElement.getAttribute("href"));
-        Assert.assertEquals(FAQ_URL, faqElement.getAttribute("href"));
-        Assert.assertEquals(PRIVACY_URL, privacyElement.getAttribute("href"));
-        Assert.assertEquals(TERMS_OF_USE_URL, termsOfUseElement.getAttribute("href"));
-        Assert.assertEquals(IMPRINT_URL, imprintElement.getAttribute("href"));
-        Assert.assertEquals(REDEEM_URL, redeemElement.getAttribute("href"));
-    }
+
 }
