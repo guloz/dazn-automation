@@ -2,28 +2,34 @@ package e2eTestFramework.tests;
 
 import e2eTestFramework.common.BaseTest;
 import e2eTestFramework.pages.SignInPage;
+import org.junit.Before;
 import org.junit.Test;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import static e2eTestFramework.common.PageObject.SIGN_IN_URL;
 
 public class SignInTest extends BaseTest {
 
-    SignInPage signInPage;
+    private WebDriver driver;
+    private SignInPage signInPage;
+
+    @Before
+    public void setUp() {
+        System.setProperty(CHROME_DRIVER, CHROME_DRIVER_LOCATION);
+        driver = new ChromeDriver();
+        signInPage = new SignInPage(driver);
+    }
 
     @Test
     public void signIn_checkCorrectTextExist() {
-        WebDriver driver;
-        System.setProperty(CHROME_DRIVER, CHROME_DRIVER_LOCATION);
-        driver =new ChromeDriver();
 
-
-        driver.get(SIGN_IN_URL);
-
+        signInPage.openSignInPage();
+        signInPage.waitUntilLogoPresent();
+//        signInPage.checkText_SignIn_Title();
+//        signInPage.checkLinkTextsExist();
+//        signInPage.isElementPresent(signInPage.startWatchingElement);
+//        signInPage.checkLandingPageFooterUrlValues();
+//        signInPage.fillinAndSubmitSignInForm();
+        driver.quit();
 
     }
 }

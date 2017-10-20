@@ -1,5 +1,6 @@
 package e2eTestFramework.pages;
 
+import e2eTestFramework.common.PageObject;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
@@ -7,7 +8,7 @@ import org.openqa.selenium.support.FindBy;
 
 import java.util.Map;
 
-public class ForgotPasswordPage {
+public class ForgotPasswordPage  extends PageObject {
     private Map<String, String> data;
     private WebDriver driver;
     private int timeout = 15;
@@ -29,13 +30,10 @@ public class ForgotPasswordPage {
     private WebElement send;
 
 
-    public ForgotPasswordPage() {
+    public ForgotPasswordPage(WebDriver driver) {
+        super(driver);
     }
 
-    public ForgotPasswordPage(WebDriver driver) {
-        this();
-        this.driver = driver;
-    }
 
     public ForgotPasswordPage(WebDriver driver, Map<String, String> data) {
         this(driver);

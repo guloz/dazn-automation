@@ -1,5 +1,6 @@
 package e2eTestFramework.pages;
 
+import e2eTestFramework.common.PageObject;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
@@ -7,7 +8,7 @@ import org.openqa.selenium.support.FindBy;
 
 import java.util.Map;
 
-public class HomeScheduleSports {
+public class HomeScheduleSports  extends PageObject {
     private Map<String, String> data;
     private WebDriver driver;
     private int timeout = 15;
@@ -20,12 +21,8 @@ public class HomeScheduleSports {
     private WebElement whatsOnfaqhomemyAccounthelpprivacyPolicytermsAndConditions;
 
 
-    public HomeScheduleSports() {
-    }
-
     public HomeScheduleSports(WebDriver driver) {
-        this();
-        this.driver = driver;
+        super(driver);
     }
 
     public HomeScheduleSports(WebDriver driver, Map<String, String> data) {

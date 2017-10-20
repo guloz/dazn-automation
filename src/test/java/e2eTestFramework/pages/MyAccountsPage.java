@@ -1,5 +1,6 @@
 package e2eTestFramework.pages;
 
+import e2eTestFramework.common.PageObject;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
@@ -8,7 +9,7 @@ import org.openqa.selenium.support.FindBy;
 import java.util.List;
 import java.util.Map;
 
-public class MyAccountsPage {
+public class MyAccountsPage  extends PageObject {
     private Map<String, String> data;
     private WebDriver driver;
     private int timeout = 15;
@@ -110,13 +111,10 @@ public class MyAccountsPage {
     @CacheLookup
     private WebElement signOutFromAllDevices;
 
-    public MyAccountsPage() {
+    public MyAccountsPage(WebDriver driver) {
+        super(driver);
     }
 
-    public MyAccountsPage(WebDriver driver) {
-        this();
-        this.driver = driver;
-    }
 
     public MyAccountsPage(WebDriver driver, Map<String, String> data) {
         this(driver);

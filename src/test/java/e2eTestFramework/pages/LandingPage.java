@@ -25,8 +25,6 @@ public class LandingPage extends PageObject {
     private static final String SIGN_IN_ELEMENT = "id(\"app\")/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[4]/div[1]/p[1]/a[1]";
     private static final String SIGN_UP_BUTTON = "id(\"app\")/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/button[1]/span[2]";
 
-
-
     private int timeout = 15;
 
     @FindBy(xpath = RICHTEXT_SUBTITLE_ELEMENT)
@@ -52,15 +50,6 @@ public class LandingPage extends PageObject {
         driver.get(BASE_URL);
     }
 
-    public Map<String, WebElement> footerLinks = new HashMap<String, WebElement>() {
-        {
-            put(HELP_LINK_TEXT, helpElement);
-            put(FAQ_LINK_TEXT, faqElement);
-            put(TERMSOFUSE_LINK_TEXT, termsOfUseElement);
-            put(PRIVACY_LINK_TEXT, privacyElement);
-            put(IMPRINT_LINK_TEXT, imprintElement);
-        }
-    };
 
     public void waitUntilLogoPresent() {
         WebDriverWait wait = new WebDriverWait(driver, 10);
@@ -74,6 +63,16 @@ public class LandingPage extends PageObject {
     public void checkLinkTextExist(String linkText) {
         assertEquals(linkText, signInLink.getText());
     }
+
+    public Map<String, WebElement> footerLinks = new HashMap<String, WebElement>() {
+        {
+            put(HELP_LINK_TEXT, helpElement);
+            put(FAQ_LINK_TEXT, faqElement);
+            put(TERMSOFUSE_LINK_TEXT, termsOfUseElement);
+            put(PRIVACY_LINK_TEXT, privacyElement);
+            put(IMPRINT_LINK_TEXT, imprintElement);
+        }
+    };
 
     public boolean verifyAllLinkText() {
         boolean linkTextMatches = true;
@@ -103,10 +102,6 @@ public class LandingPage extends PageObject {
         }
     }
 
-
-    // follow the links of buttons and linktext to see they work ok
-
-
     public void checkLandingPageFooterUrlValues(){
         Assert.assertEquals(helpElement.getAttribute("href"), HELP_URL);
         Assert.assertEquals(faqElement.getAttribute("href"), FAQ_URL);
@@ -114,11 +109,6 @@ public class LandingPage extends PageObject {
         Assert.assertEquals(termsOfUseElement.getAttribute("href"), TERMS_OF_USE_URL);
         Assert.assertEquals(imprintElement.getAttribute("href"), IMPRINT_URL);
 
-
-
     }
-
-
-
 
 }

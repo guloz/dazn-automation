@@ -8,7 +8,7 @@ import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import static e2eTestFramework.common.PageObject.*;
+import static e2eTestFramework.common.PageObject.SIGNIN_LINK_TEXT;
 
 
 public class LandingPageTest extends BaseTest {
@@ -32,7 +32,7 @@ public class LandingPageTest extends BaseTest {
         Assert.assertTrue(landingPage.verifyAllLinkText());
         landingPage.isElementPresent(landingPage.signupbutton);
         landingPage.checkLandingPageFooterUrlValues();
-        //        driver.quit();
+        //driver.quit();
 
     }
 }

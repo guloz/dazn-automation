@@ -2,15 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b95767af-9a8e-41f4-8a2c-e4420d71dfa3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/e2eTestFramework/common/PageObject.class" afterPath="$PROJECT_DIR$/target/test-classes/e2eTestFramework/common/PageObject.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/e2eTestFramework/pages/LandingPage.class" afterPath="$PROJECT_DIR$/target/test-classes/e2eTestFramework/pages/LandingPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/e2eTestFramework/pages/SignInPage$1.class" afterPath="$PROJECT_DIR$/target/test-classes/e2eTestFramework/pages/SignInPage$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/e2eTestFramework/pages/SignInPage$2.class" afterPath="$PROJECT_DIR$/target/test-classes/e2eTestFramework/pages/SignInPage$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/e2eTestFramework/pages/SignInPage.class" afterPath="$PROJECT_DIR$/target/test-classes/e2eTestFramework/pages/SignInPage.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/e2eTestFramework/common/BaseTest.java" afterPath="$PROJECT_DIR$/src/test/java/e2eTestFramework/common/BaseTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/e2eTestFramework/common/PageObject.java" afterPath="$PROJECT_DIR$/src/test/java/e2eTestFramework/common/PageObject.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/e2eTestFramework/pages/ChangePaymentMethodPage.java" afterPath="$PROJECT_DIR$/src/test/java/e2eTestFramework/pages/ChangePaymentMethodPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/e2eTestFramework/pages/CreateAccountDetailsPage.java" afterPath="$PROJECT_DIR$/src/test/java/e2eTestFramework/pages/CreateAccountDetailsPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/e2eTestFramework/pages/ForgotEmailPage.java" afterPath="$PROJECT_DIR$/src/test/java/e2eTestFramework/pages/ForgotEmailPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/e2eTestFramework/pages/ForgotPasswordPage.java" afterPath="$PROJECT_DIR$/src/test/java/e2eTestFramework/pages/ForgotPasswordPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/e2eTestFramework/pages/HomeScheduleSports.java" afterPath="$PROJECT_DIR$/src/test/java/e2eTestFramework/pages/HomeScheduleSports.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/e2eTestFramework/pages/LandingPage.java" afterPath="$PROJECT_DIR$/src/test/java/e2eTestFramework/pages/LandingPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/e2eTestFramework/pages/MyAccountsPage.java" afterPath="$PROJECT_DIR$/src/test/java/e2eTestFramework/pages/MyAccountsPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/e2eTestFramework/pages/SignInPage.java" afterPath="$PROJECT_DIR$/src/test/java/e2eTestFramework/pages/SignInPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/e2eTestFramework/pages/SignUpPage.java" afterPath="$PROJECT_DIR$/src/test/java/e2eTestFramework/pages/SignUpPage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/e2eTestFramework/tests/LandingPageTest.java" afterPath="$PROJECT_DIR$/src/test/java/e2eTestFramework/tests/LandingPageTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/e2eTestFramework/tests/MyAccountsTest.java" afterPath="$PROJECT_DIR$/src/test/java/e2eTestFramework/tests/MyAccountsTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/e2eTestFramework/tests/SignInTest.java" afterPath="$PROJECT_DIR$/src/test/java/e2eTestFramework/tests/SignInTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/e2eTestFramework/tests/SignUpTest.java" afterPath="$PROJECT_DIR$/src/test/java/e2eTestFramework/tests/SignUpTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,11 +29,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LandingPageTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/e2eTestFramework/tests/LandingPageTest.java">
+      <file leaf-file-name="SignInTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/e2eTestFramework/tests/SignInTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="33" column="43" lean-forward="false" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
+            <state relative-caret-position="120">
+              <caret line="8" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -34,21 +41,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LandingPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/e2eTestFramework/pages/LandingPage.java">
+      <file leaf-file-name="SignInPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/e2eTestFramework/pages/SignInPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="112" column="69" lean-forward="false" selection-start-line="112" selection-start-column="69" selection-end-line="112" selection-end-column="69" />
+            <state relative-caret-position="170">
+              <caret line="29" column="11" lean-forward="false" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PageObject.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LandingPageTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/e2eTestFramework/tests/LandingPageTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="217">
+              <caret line="34" column="10" lean-forward="false" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PageObject.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/e2eTestFramework/common/PageObject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="31" column="56" lean-forward="false" selection-start-line="31" selection-start-column="56" selection-end-line="31" selection-end-column="56" />
+            <state relative-caret-position="81">
+              <caret line="102" column="0" lean-forward="false" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -68,6 +87,7 @@
       <find>park</find>
       <find>CreatePaymentDetailsPage</find>
       <find>help</find>
+      <find>singinTitleElement</find>
     </findStrings>
     <replaceStrings>
       <replace>SignUp</replace>
@@ -88,32 +108,33 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/test/java/e2eTestFramework/pages/SignUp.java" />
-        <option value="$PROJECT_DIR$/src/test/java/e2eTestFramework/pages/ChangePaymentMethodPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/e2eTestFramework/pages/CreateAccountDetailsPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/e2eTestFramework/pages/ForgotPasswordPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/e2eTestFramework/pages/MyAccountsPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/e2eTestFramework/pages/SignUpPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/e2eTestFramework/pages/HomeScheduleSports.java" />
-        <option value="$PROJECT_DIR$/src/test/java/e2eTestFramework/pages/ForgotEmailPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/e2eTestFramework/tests/test_MyAccounts.java" />
         <option value="$PROJECT_DIR$/src/test/java/e2eTestFramework/tests/test_SignIn.java" />
         <option value="$PROJECT_DIR$/src/test/java/e2eTestFramework/tests/test_SignUp.java" />
         <option value="$PROJECT_DIR$/src/test/java/e2eTestFramework/tests/test_Landing.java" />
         <option value="$PROJECT_DIR$/src/test/java/e2eTestFramework/common/BaseTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/e2eTestFramework/tests/SignUpTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/e2eTestFramework/tests/SignInTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/e2eTestFramework/dazn_frontEndAutomation/common/tests/MyAccountsTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/e2eTestFramework/tests/MyAccountsTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/e2eTestFramework/pages/LandingPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/e2eTestFramework/pages/ForgotEmailPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/e2eTestFramework/pages/ChangePaymentMethodPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/e2eTestFramework/pages/ForgotPasswordPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/e2eTestFramework/pages/HomeScheduleSports.java" />
+        <option value="$PROJECT_DIR$/src/test/java/e2eTestFramework/pages/MyAccountsPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/e2eTestFramework/common/PageObject.java" />
         <option value="$PROJECT_DIR$/src/test/java/e2eTestFramework/pages/SignInPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/e2eTestFramework/tests/LandingPageTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/e2eTestFramework/pages/LandingPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/e2eTestFramework/common/PageObject.java" />
+        <option value="$PROJECT_DIR$/src/test/java/e2eTestFramework/tests/SignInTest.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-213" />
-    <option name="y" value="-1057" />
-    <option name="width" value="1920" />
-    <option name="height" value="1002" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="822" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -230,8 +251,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.LandingPageTest.landingPage_checkElementsExist">
-    <configuration name="LandingPageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.LandingPageTest (1)">
+    <configuration name="LandingPageTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="e2eTestFramework.tests.*" />
@@ -256,18 +277,43 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="LandingPageTest.landingPage_checkElementsExist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LandingPageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="e2eTestFramework.tests.*" />
+          <option name="PATTERN" value="e2eTestFramework.dazn_frontEndAutomation.common.tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="dazn" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="e2eTestFramework.tests" />
-      <option name="MAIN_CLASS_NAME" value="e2eTestFramework.tests.LandingPageTest" />
+      <option name="PACKAGE_NAME" value="e2eTestFramework.dazn_frontEndAutomation.common.tests" />
+      <option name="MAIN_CLASS_NAME" value="e2eTestFramework.dazn_frontEndAutomation.common.tests.LandingPageTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="LandingPageTest.landingPage_checkElementsExist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="e2eTestFramework.dazn_frontEndAutomation.common.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="dazn" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="e2eTestFramework.dazn_frontEndAutomation.common.tests" />
+      <option name="MAIN_CLASS_NAME" value="e2eTestFramework.dazn_frontEndAutomation.common.tests.LandingPageTest" />
       <option name="METHOD_NAME" value="landingPage_checkElementsExist" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -284,15 +330,15 @@
     <configuration name="LandingPageTest.signIn_checkCorrectTextExist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="e2eTestFramework.tests.*" />
+          <option name="PATTERN" value="e2eTestFramework.dazn_frontEndAutomation.common.tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="dazn" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="e2eTestFramework.tests" />
-      <option name="MAIN_CLASS_NAME" value="e2eTestFramework.tests.LandingPageTest" />
+      <option name="PACKAGE_NAME" value="e2eTestFramework.dazn_frontEndAutomation.common.tests" />
+      <option name="MAIN_CLASS_NAME" value="e2eTestFramework.dazn_frontEndAutomation.common.tests.LandingPageTest" />
       <option name="METHOD_NAME" value="signIn_checkCorrectTextExist" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -306,7 +352,7 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="SignInTest.signIn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SignInTest.signIn_checkCorrectTextExist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="e2eTestFramework.tests.*" />
@@ -318,32 +364,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="e2eTestFramework.tests" />
       <option name="MAIN_CLASS_NAME" value="e2eTestFramework.tests.SignInTest" />
-      <option name="METHOD_NAME" value="signIn" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="SignUpTest.signUp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="e2eTestFramework.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="dazn" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="e2eTestFramework.tests" />
-      <option name="MAIN_CLASS_NAME" value="e2eTestFramework.tests.SignUpTest" />
-      <option name="METHOD_NAME" value="signUp" />
+      <option name="METHOD_NAME" value="signIn_checkCorrectTextExist" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -438,19 +459,19 @@
       <listeners />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.SignUpTest.signUp" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.SignInTest.signIn" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.LandingPageTest.signIn_checkCorrectTextExist" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.LandingPageTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.LandingPageTest.landingPage_checkElementsExist" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.LandingPageTest.signIn_checkCorrectTextExist" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.LandingPageTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.LandingPageTest.landingPage_checkElementsExist" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.LandingPageTest (1)" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.SignInTest.signIn_checkCorrectTextExist" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.LandingPageTest.landingPage_checkElementsExist" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.LandingPageTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.LandingPageTest.signIn_checkCorrectTextExist" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.SignUpTest.signUp" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.SignInTest.signIn" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.LandingPageTest (1)" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.SignInTest.signIn_checkCorrectTextExist" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.LandingPageTest.landingPage_checkElementsExist" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.LandingPageTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.LandingPageTest.signIn_checkCorrectTextExist" />
       </list>
     </recent_temporary>
   </component>
@@ -503,64 +524,71 @@
       <option name="project" value="LOCAL" />
       <updated>1508432541492</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Landing Page - Updated Test">
+      <created>1508434225369</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1508434225369</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LandingPageTest_landingPage_checkElementsExist - 2017.10.19 at 18h 00m 31s.xml">
-      <configuration name="LandingPageTest.landingPage_checkElementsExist" configurationId="JUnit" />
+    <history-entry file="LandingPageTest_(1) - 2017.10.20 at 01h 19m 21s.xml">
+      <configuration name="LandingPageTest (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LandingPageTest_landingPage_checkElementsExist - 2017.10.19 at 18h 00m 40s.xml">
-      <configuration name="LandingPageTest.landingPage_checkElementsExist" configurationId="JUnit" />
+    <history-entry file="SignInTest_signIn_checkCorrectTextExist - 2017.10.20 at 00h 49m 48s.xml">
+      <configuration name="SignInTest.signIn_checkCorrectTextExist" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LandingPageTest_landingPage_checkElementsExist - 2017.10.19 at 18h 00m 51s.xml">
-      <configuration name="LandingPageTest.landingPage_checkElementsExist" configurationId="JUnit" />
+    <history-entry file="SignInTest_signIn_checkCorrectTextExist - 2017.10.20 at 00h 50m 12s.xml">
+      <configuration name="SignInTest.signIn_checkCorrectTextExist" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LandingPageTest_landingPage_checkElementsExist - 2017.10.19 at 18h 01m 53s.xml">
-      <configuration name="LandingPageTest.landingPage_checkElementsExist" configurationId="JUnit" />
+    <history-entry file="SignInTest_signIn_checkCorrectTextExist - 2017.10.20 at 01h 00m 55s.xml">
+      <configuration name="SignInTest.signIn_checkCorrectTextExist" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LandingPageTest_landingPage_checkElementsExist - 2017.10.19 at 18h 13m 03s.xml">
-      <configuration name="LandingPageTest.landingPage_checkElementsExist" configurationId="JUnit" />
+    <history-entry file="SignInTest_signIn_checkCorrectTextExist - 2017.10.20 at 01h 06m 33s.xml">
+      <configuration name="SignInTest.signIn_checkCorrectTextExist" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LandingPageTest_landingPage_checkElementsExist - 2017.10.19 at 18h 24m 49s.xml">
-      <configuration name="LandingPageTest.landingPage_checkElementsExist" configurationId="JUnit" />
+    <history-entry file="SignInTest_signIn_checkCorrectTextExist - 2017.10.20 at 01h 09m 34s.xml">
+      <configuration name="SignInTest.signIn_checkCorrectTextExist" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LandingPageTest_landingPage_checkElementsExist - 2017.10.19 at 18h 26m 32s.xml">
-      <configuration name="LandingPageTest.landingPage_checkElementsExist" configurationId="JUnit" />
+    <history-entry file="SignInTest_signIn_checkCorrectTextExist - 2017.10.20 at 01h 10m 54s.xml">
+      <configuration name="SignInTest.signIn_checkCorrectTextExist" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LandingPageTest_landingPage_checkElementsExist - 2017.10.19 at 18h 28m 04s.xml">
-      <configuration name="LandingPageTest.landingPage_checkElementsExist" configurationId="JUnit" />
+    <history-entry file="SignInTest_signIn_checkCorrectTextExist - 2017.10.20 at 01h 11m 37s.xml">
+      <configuration name="SignInTest.signIn_checkCorrectTextExist" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LandingPageTest_landingPage_checkElementsExist - 2017.10.19 at 18h 29m 28s.xml">
-      <configuration name="LandingPageTest.landingPage_checkElementsExist" configurationId="JUnit" />
+    <history-entry file="SignInTest_signIn_checkCorrectTextExist - 2017.10.20 at 01h 12m 13s.xml">
+      <configuration name="SignInTest.signIn_checkCorrectTextExist" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LandingPageTest_landingPage_checkElementsExist - 2017.10.19 at 18h 29m 59s.xml">
-      <configuration name="LandingPageTest.landingPage_checkElementsExist" configurationId="JUnit" />
+    <history-entry file="SignInTest_signIn_checkCorrectTextExist - 2017.10.20 at 01h 12m 57s.xml">
+      <configuration name="SignInTest.signIn_checkCorrectTextExist" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-213" y="-1057" width="1920" height="1002" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="822" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280543" sideWeight="0.4403621" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3252841" sideWeight="0.4403621" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290735" sideWeight="0.5468584" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42986426" sideWeight="0.45314163" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3693182" sideWeight="0.45314163" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290735" sideWeight="0.4978701" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290735" sideWeight="0.4978701" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1996805" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290735" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24034335" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328125" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5361991" sideWeight="0.4978701" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3465909" sideWeight="0.4978701" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -604,30 +632,38 @@
     <MESSAGE value="Optimised Imports" />
     <MESSAGE value="Webdriver and Page Objects Refactored" />
     <MESSAGE value="LandingPage Sanity Check Test Added - Reviewed By Joe" />
-    <option name="LAST_COMMIT_MESSAGE" value="LandingPage Sanity Check Test Added - Reviewed By Joe" />
+    <MESSAGE value="Landing Page - Updated Test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Landing Page - Updated Test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/e2eTestFramework/tests/SignInTest.java</url>
-          <line>21</line>
-          <properties />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/e2eTestFramework/pages/LandingPage.java</url>
-          <line>84</line>
+          <line>83</line>
           <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/e2eTestFramework/pages/LandingPage.java</url>
-          <line>81</line>
+          <line>80</line>
           <properties />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/e2eTestFramework/tests/SignInTest.java</url>
+          <line>25</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/e2eTestFramework/tests/SignInTest.java</url>
+          <line>24</line>
+          <properties />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="5" />
+      <option name="time" value="7" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -712,54 +748,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/e2eTestFramework/pages/CreateAccountDetailsPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="22" column="54" lean-forward="false" selection-start-line="22" selection-start-column="54" selection-end-line="22" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/e2eTestFramework/pages/ForgotPasswordPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="13" column="19" lean-forward="false" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/e2eTestFramework/pages/MyAccountsPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="230" column="0" lean-forward="true" selection-start-line="230" selection-start-column="0" selection-end-line="230" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/e2eTestFramework/pages/HomeScheduleSports.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="13" column="36" lean-forward="false" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/e2eTestFramework/pages/ForgotEmailPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="138" column="0" lean-forward="false" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/e2eTestFramework/pages/ChangePaymentMethodPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.8.1/junit-4.8.1-sources.jar!/org/junit/runners/model/FrameworkMethod.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -779,72 +767,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.8.1/junit-4.8.1-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.4.0/selenium-api-3.4.0.jar!/org/openqa/selenium/WebDriver.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="14" column="9" lean-forward="false" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/e2eTestFramework/common/BaseTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="86" lean-forward="false" selection-start-line="5" selection-start-column="86" selection-end-line="5" selection-end-column="86" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/e2eTestFramework/tests/MyAccountsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="45" lean-forward="false" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/e2eTestFramework/tests/SignInTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/e2eTestFramework/pages/SignUpPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="23" column="60" lean-forward="false" selection-start-line="23" selection-start-column="60" selection-end-line="23" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/e2eTestFramework/tests/SignUpTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/e2eTestFramework/pages/SignInPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="25" column="16" lean-forward="true" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.8.1/junit-4.8.1-sources.jar!/org/junit/Assert.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="159">
@@ -856,29 +778,173 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/e2eTestFramework/tests/LandingPageTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/e2eTestFramework/tests/SignUpTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="33" column="43" lean-forward="false" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
+        <state relative-caret-position="360">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/e2eTestFramework/dazn_frontEndAutomation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="36" lean-forward="false" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/e2eTestFramework/tests/MyAccountsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/e2eTestFramework/common/BaseTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="86" lean-forward="false" selection-start-line="5" selection-start-column="86" selection-end-line="5" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.8.1/junit-4.8.1-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.4.0/selenium-api-3.4.0.jar!/org/openqa/selenium/WebDriver.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/e2eTestFramework/pages/CreateAccountDetailsPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/e2eTestFramework/pages/ForgotEmailPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1246#1247#0" expanded="true" />
+            <element signature="e#1275#1276#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/e2eTestFramework/pages/ChangePaymentMethodPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="155" column="13" lean-forward="false" selection-start-line="155" selection-start-column="13" selection-end-line="155" selection-end-column="13" />
+          <folding>
+            <element signature="e#4503#4504#0" expanded="true" />
+            <element signature="e#4532#4533#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/e2eTestFramework/pages/ForgotPasswordPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="33" column="22" lean-forward="false" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+          <folding>
+            <element signature="e#847#848#0" expanded="true" />
+            <element signature="e#876#877#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/e2eTestFramework/pages/SignUpPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="23" column="60" lean-forward="false" selection-start-line="23" selection-start-column="60" selection-end-line="23" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/e2eTestFramework/pages/HomeScheduleSports.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <element signature="e#646#647#0" expanded="true" />
+            <element signature="e#675#676#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/e2eTestFramework/pages/MyAccountsPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="116" column="0" lean-forward="true" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+          <folding>
+            <element signature="e#2598#2599#0" expanded="true" />
+            <element signature="e#2627#2628#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/e2eTestFramework/pages/LandingPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="112" column="69" lean-forward="false" selection-start-line="112" selection-start-column="69" selection-end-line="112" selection-end-column="69" />
-          <folding />
+        <state relative-caret-position="410">
+          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="45" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1641#1642#0" expanded="true" />
+            <element signature="e#1670#1671#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/e2eTestFramework/common/PageObject.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="31" column="56" lean-forward="false" selection-start-line="31" selection-start-column="56" selection-end-line="31" selection-end-column="56" />
+        <state relative-caret-position="81">
+          <caret line="102" column="0" lean-forward="false" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/e2eTestFramework/pages/SignInPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="29" column="11" lean-forward="false" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/e2eTestFramework/tests/LandingPageTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="34" column="10" lean-forward="false" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/e2eTestFramework/tests/SignInTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

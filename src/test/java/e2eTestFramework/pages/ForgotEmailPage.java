@@ -1,5 +1,6 @@
 package e2eTestFramework.pages;
 
+import e2eTestFramework.common.PageObject;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
@@ -8,7 +9,7 @@ import org.openqa.selenium.support.ui.Select;
 
 import java.util.Map;
 
-public class ForgotEmailPage {
+public class ForgotEmailPage  extends PageObject{
     private Map<String, String> data;
     private WebDriver driver;
     private int timeout = 15;
@@ -43,12 +44,8 @@ public class ForgotEmailPage {
     private final String pageUrl = "/en-DE/account/remember-email";
 
 
-    public ForgotEmailPage() {
-    }
-
     public ForgotEmailPage(WebDriver driver) {
-        this();
-        this.driver = driver;
+        super(driver);
     }
 
     public ForgotEmailPage(WebDriver driver, Map<String, String> data) {
