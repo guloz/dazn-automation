@@ -47,15 +47,15 @@ public class SignInPage extends PageObject{
 
     @FindBy(xpath = SIGN_IN_TITLE_ELEMENT)
     @CacheLookup
-    public WebElement singinTitleElement;
+    private WebElement singinTitleElement;
 
     @FindBy(xpath = SIGN_UP_LINK_ELEMENT)
     @CacheLookup
-    public WebElement signUplinkElement;
+    private WebElement signUplinkElement;
 
     @FindBy(xpath = FORGOT_PASSWORD_LINK_ELEMENT)
     @CacheLookup
-    public WebElement forgotPasswordLinkElement;
+    private WebElement forgotPasswordLinkElement;
 
     @FindBy(className = DAZN_LOGO)
     @CacheLookup
@@ -63,23 +63,23 @@ public class SignInPage extends PageObject{
 
     @FindBy(xpath = FAQ_ELEMENT)
     @CacheLookup
-    protected WebElement faqElement;
+    private WebElement faqElement;
 
     @FindBy(xpath = HELP_ELEMENT)
     @CacheLookup
-    public WebElement helpElement;
+    private WebElement helpElement;
 
     @FindBy(xpath = IMPRINT_ELEMENT)
     @CacheLookup
-    protected WebElement imprintElement;
+    private WebElement imprintElement;
 
     @FindBy(xpath = PRIVACY_ELEMENT)
     @CacheLookup
-    protected WebElement privacyElement;
+    private WebElement privacyElement;
 
     @FindBy(xpath = TERMSOFUSE_ELEMENT)
     @CacheLookup
-    protected WebElement termsOfUseElement;
+    private WebElement termsOfUseElement;
 
     public SignInPage(WebDriver driver) {
         super(driver);
@@ -98,6 +98,7 @@ public class SignInPage extends PageObject{
     public void checkText_SignIn_Title() {
         assertEquals(SIGN_IN_TITLE_TEXT, singinTitleElement.getText());
     }
+
 
     public void checkLinkTextsExist()
     {
